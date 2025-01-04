@@ -18,6 +18,9 @@ docker run nicootto/epson_l4160_ink_waste_resetter <PRINTER_IP>
 ```
 docker build -t epson_l4160_ink_waste_resetter .
 docker run epson_l4160_ink_waste_resetter <PRINTER_IP>
+
+docker run -it --rm --network host --entrypoint /bin/bash epson_l4160_ink_waste_resetter
+Then python resetter.py <PRINTER_IP>
 ```
 
 ### Run without Docker
